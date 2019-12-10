@@ -4,7 +4,7 @@
           Try
                Dim xv As String = My.Application.Info.Version.ToString
                Label1.Text = "Password Pro v" & xv
-               Label2.Text = "© 2019 Scott Reed"
+               Label2.Text = "© 2019 - Mighty Apps Software"
                LinkLabel1.Text = "mreed1972@gmail.com"
           Catch ex As Exception
           End Try

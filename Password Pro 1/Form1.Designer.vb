@@ -26,6 +26,8 @@ Partial Class Form1
           Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
           Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
           Me.Panel1 = New System.Windows.Forms.Panel()
+          Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+          Me.PictureBox2 = New System.Windows.Forms.PictureBox()
           Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
           Me.Label1 = New System.Windows.Forms.Label()
           Me.rb3 = New System.Windows.Forms.RadioButton()
@@ -49,6 +51,7 @@ Partial Class Form1
           Me.dgv = New System.Windows.Forms.DataGridView()
           Me.GenPss = New System.Windows.Forms.DataGridViewTextBoxColumn()
           Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+          Me.AddToFavoritesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
           Me.txResults = New System.Windows.Forms.TextBox()
           Me.labWordCount = New System.Windows.Forms.Label()
           Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
@@ -61,10 +64,9 @@ Partial Class Form1
           Me.Button3 = New System.Windows.Forms.Button()
           Me.Button2 = New System.Windows.Forms.Button()
           Me.Button1 = New System.Windows.Forms.Button()
-          Me.AddToFavoritesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-          Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-          Me.PictureBox2 = New System.Windows.Forms.PictureBox()
           Me.Panel1.SuspendLayout()
+          CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+          CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
           Me.TableLayoutPanel1.SuspendLayout()
           Me.TableLayoutPanel2.SuspendLayout()
           Me.TableLayoutPanel3.SuspendLayout()
@@ -72,8 +74,6 @@ Partial Class Form1
           Me.ContextMenuStrip1.SuspendLayout()
           Me.TableLayoutPanel4.SuspendLayout()
           CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-          CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-          CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
           Me.SuspendLayout()
           '
           'Panel1
@@ -86,6 +86,26 @@ Partial Class Form1
           Me.Panel1.Name = "Panel1"
           Me.Panel1.Size = New System.Drawing.Size(501, 84)
           Me.Panel1.TabIndex = 0
+          '
+          'PictureBox1
+          '
+          Me.PictureBox1.Image = Global.Password_Pro_1.My.Resources.Resources.LogoIcon
+          Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
+          Me.PictureBox1.Name = "PictureBox1"
+          Me.PictureBox1.Size = New System.Drawing.Size(89, 77)
+          Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+          Me.PictureBox1.TabIndex = 1
+          Me.PictureBox1.TabStop = False
+          '
+          'PictureBox2
+          '
+          Me.PictureBox2.Image = Global.Password_Pro_1.My.Resources.Resources.Banner11
+          Me.PictureBox2.Location = New System.Drawing.Point(-2, 0)
+          Me.PictureBox2.Name = "PictureBox2"
+          Me.PictureBox2.Size = New System.Drawing.Size(500, 84)
+          Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+          Me.PictureBox2.TabIndex = 1
+          Me.PictureBox2.TabStop = False
           '
           'TableLayoutPanel1
           '
@@ -374,6 +394,14 @@ Partial Class Form1
           Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
           Me.ContextMenuStrip1.Size = New System.Drawing.Size(161, 26)
           '
+          'AddToFavoritesToolStripMenuItem
+          '
+          Me.AddToFavoritesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+          Me.AddToFavoritesToolStripMenuItem.Image = Global.Password_Pro_1.My.Resources.Resources.weIMAGE127
+          Me.AddToFavoritesToolStripMenuItem.Name = "AddToFavoritesToolStripMenuItem"
+          Me.AddToFavoritesToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
+          Me.AddToFavoritesToolStripMenuItem.Text = "Add to Favorites"
+          '
           'txResults
           '
           Me.txResults.BackColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(243, Byte), Integer))
@@ -517,34 +545,6 @@ Partial Class Form1
           Me.Button1.TabIndex = 7
           Me.Button1.UseVisualStyleBackColor = False
           '
-          'AddToFavoritesToolStripMenuItem
-          '
-          Me.AddToFavoritesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-          Me.AddToFavoritesToolStripMenuItem.Image = Global.Password_Pro_1.My.Resources.Resources.weIMAGE127
-          Me.AddToFavoritesToolStripMenuItem.Name = "AddToFavoritesToolStripMenuItem"
-          Me.AddToFavoritesToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-          Me.AddToFavoritesToolStripMenuItem.Text = "Add to Favorites"
-          '
-          'PictureBox1
-          '
-          Me.PictureBox1.Image = Global.Password_Pro_1.My.Resources.Resources.LogoIcon
-          Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
-          Me.PictureBox1.Name = "PictureBox1"
-          Me.PictureBox1.Size = New System.Drawing.Size(89, 77)
-          Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-          Me.PictureBox1.TabIndex = 1
-          Me.PictureBox1.TabStop = False
-          '
-          'PictureBox2
-          '
-          Me.PictureBox2.Image = Global.Password_Pro_1.My.Resources.Resources.Banner11
-          Me.PictureBox2.Location = New System.Drawing.Point(-2, 0)
-          Me.PictureBox2.Name = "PictureBox2"
-          Me.PictureBox2.Size = New System.Drawing.Size(500, 84)
-          Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-          Me.PictureBox2.TabIndex = 1
-          Me.PictureBox2.TabStop = False
-          '
           'Form1
           '
           Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -570,6 +570,8 @@ Partial Class Form1
           Me.Text = "Form1"
           Me.Panel1.ResumeLayout(False)
           Me.Panel1.PerformLayout()
+          CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+          CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
           Me.TableLayoutPanel1.ResumeLayout(False)
           Me.TableLayoutPanel1.PerformLayout()
           Me.TableLayoutPanel2.ResumeLayout(False)
@@ -581,8 +583,6 @@ Partial Class Form1
           Me.TableLayoutPanel4.ResumeLayout(False)
           Me.TableLayoutPanel4.PerformLayout()
           CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-          CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-          CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
           Me.ResumeLayout(False)
           Me.PerformLayout()
 

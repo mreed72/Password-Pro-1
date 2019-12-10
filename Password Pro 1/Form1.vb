@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    Dim FL As String = My.Application.Info.DirectoryPath & "\Data\fav.txt"
+     Dim WdList As String
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
         Application.Exit()
@@ -27,8 +27,8 @@
         SetLocation()
         Dim PrFix As String = txPrefix.Text
         Dim word1, word2 As String
-        word1 = getword(My.Settings.WdList)
-        word2 = getword(My.Settings.WdList)
+          word1 = getword(WdList)
+          word2 = getword(WdList)
 
         Dim enu As Integer
         If rbA1.Checked = True Then
@@ -59,34 +59,40 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
           Me.Text = "Password Pro"
 
-        My.Settings.WdList = My.Application.Info.DirectoryPath & "\Data\3w.txt"
-        My.Settings.Save()
+
+          Dim c As Boolean
+          c = My.Computer.FileSystem.DirectoryExists("C:\Mighty Apps\")
+          If c = False Then
+               MessageBox.Show("Data File Error, folder not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+          End If
+
+
+
 
     End Sub
 
     Function SetLocation()
         If rb3.Checked = True Then
-            My.Settings.WdList = My.Application.Info.DirectoryPath & "\Data\3w.txt"
+               WdList = "C:\Mighty Apps\3w.txt"
         ElseIf rb4.Checked = True Then
-            My.Settings.WdList = My.Application.Info.DirectoryPath & "\Data\4w.txt"
+               WdList = "C:\Mighty Apps\4w.txt"
         ElseIf rb5.Checked = True Then
-            My.Settings.WdList = My.Application.Info.DirectoryPath & "\Data\5w.txt"
+               WdList = "C:\Mighty Apps\5w.txt"
         ElseIf rb6.Checked = True Then
-            My.Settings.WdList = My.Application.Info.DirectoryPath & "\Data\6w.txt"
+               WdList = "C:\Mighty Apps\6w.txt"
         ElseIf rb7.Checked = True Then
-            My.Settings.WdList = My.Application.Info.DirectoryPath & "\Data\7w.txt"
+               WdList = "C:\Mighty Apps\7w.txt"
         ElseIf rb8.Checked = True Then
-            My.Settings.WdList = My.Application.Info.DirectoryPath & "\Data\8w.txt"
+               WdList = "C:\Mighty Apps\8w.txt"
         ElseIf rb9.Checked = True Then
-            My.Settings.WdList = My.Application.Info.DirectoryPath & "\Data\9w.txt"
+               WdList = "C:\Mighty Apps\9w.txt"
         ElseIf rb10.Checked = True Then
-            My.Settings.WdList = My.Application.Info.DirectoryPath & "\Data\10w.txt"
+               WdList = "C:\Mighty Apps\10w.txt"""
         ElseIf rb11.Checked = True Then
-            My.Settings.WdList = My.Application.Info.DirectoryPath & "\Data\10PW.txt"
+               WdList = "C:\Mighty Apps\10PW.txt"
         Else
-            My.Settings.WdList = My.Application.Info.DirectoryPath & "\Data\3w.txt"
-        End If
-        My.Settings.Save()
+               WdList = "C:\Mighty Apps\3w.txt"
+          End If
     End Function
 
     Function getword(xLOC As String)
@@ -128,25 +134,31 @@
         Next
     End Function
 
-    Function FWE(msg As String)
-        Dim file As System.IO.StreamWriter
-        file = My.Computer.FileSystem.OpenTextFileWriter(FL, True)
-        file.WriteLine(msg)
-        file.Close()
-    End Function
+
+
 
     Private Sub AddToFavoritesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddToFavoritesToolStripMenuItem.Click
         Try
             Dim JRT As String
             JRT = dgv.CurrentCell.Value
-            FWE(JRT)
-        Catch ex As Exception
-        End Try
+
+               Dim myfile As String = "C:\Mighty Apps\fav.txt"
+               Dim itxt As New TextBox
+               If IO.File.Exists(myfile) Then
+                    itxt.Text = IO.File.ReadAllText(myfile)
+               End If
+               Dim vt As String = vbCrLf & Date.Now & " --- " & JRT & itxt.Text
+               My.Computer.FileSystem.WriteAllText(myfile, vt, False)
+               itxt.Clear()
+
+          Catch ex As Exception
+               MsgBox(ex.Message)
+          End Try
 
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Diagnostics.Process.Start(FL)
+          Diagnostics.Process.Start("C:\Mighty Apps\fav.txt")
 
     End Sub
 
@@ -154,4 +166,5 @@
           frmAbout.Show()
 
      End Sub
+
 End Class

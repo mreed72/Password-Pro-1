@@ -15,13 +15,73 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_0A26EB2BED084148B908E1409A82D262"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0C1E280B598B495DA0BCEEA89C2D6145"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4EA526A3AFDD417CB7EB7D07B2DE6BA8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_60E01A52AADF4822BC4C895261AF247D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_71A228D0E0B442C3AE731BD88EAC7AC6"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_78088C33C73B4330BE422FB77D6D1C99"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
+        "MsmKey" = "8:_8CDD65FF3612430C9BF763F742E3DED4"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_B9B9154F00D74F0CA0A56EF18B969E6C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CB0BB89C4D834176ABDE4AD2CCC0AB46"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D06BEE2FE04E4AA9AE226488C01CED1B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_EC41BC191ED14812BF252DC0AA899E5B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F126F563AD4C4FD4A04702E71A3BB3EF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -49,6 +109,27 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -65,6 +146,27 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -94,12 +196,212 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0A26EB2BED084148B908E1409A82D262"
+            {
+            "SourcePath" = "8:E:\\VS PROJECTS\\WinPass Creator_08-04-2019_1\\WinPass Creator\\10PW.txt"
+            "TargetName" = "8:10PW.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_DE463AB53276402FAEB831CFF7E42E88"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0C1E280B598B495DA0BCEEA89C2D6145"
+            {
+            "SourcePath" = "8:E:\\VS PROJECTS\\WinPass Creator_08-04-2019_1\\WinPass Creator\\fav.txt"
+            "TargetName" = "8:fav.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_DE463AB53276402FAEB831CFF7E42E88"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4EA526A3AFDD417CB7EB7D07B2DE6BA8"
+            {
+            "SourcePath" = "8:E:\\VS PROJECTS\\WinPass Creator_08-04-2019_1\\WinPass Creator\\6w.txt"
+            "TargetName" = "8:6w.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_DE463AB53276402FAEB831CFF7E42E88"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_60E01A52AADF4822BC4C895261AF247D"
+            {
+            "SourcePath" = "8:E:\\VS PROJECTS\\WinPass Creator_08-04-2019_1\\WinPass Creator\\3w.txt"
+            "TargetName" = "8:3w.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_DE463AB53276402FAEB831CFF7E42E88"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_71A228D0E0B442C3AE731BD88EAC7AC6"
+            {
+            "SourcePath" = "8:E:\\VS PROJECTS\\WinPass Creator_08-04-2019_1\\WinPass Creator\\7w.txt"
+            "TargetName" = "8:7w.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_DE463AB53276402FAEB831CFF7E42E88"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_78088C33C73B4330BE422FB77D6D1C99"
             {
             "SourcePath" = "8:E:\\IMAGES\\PassPro\\LogoIcon.ico"
             "TargetName" = "8:LogoIcon.ico"
             "Tag" = "8:"
             "Folder" = "8:_2340BA82F1204933B4820B218162A5C1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8CDD65FF3612430C9BF763F742E3DED4"
+            {
+            "SourcePath" = "8:E:\\VS PROJECTS\\WinPass Creator_08-04-2019_1\\WinPass Creator\\10w.txt"
+            "TargetName" = "8:10w.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_DE463AB53276402FAEB831CFF7E42E88"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CB0BB89C4D834176ABDE4AD2CCC0AB46"
+            {
+            "SourcePath" = "8:E:\\VS PROJECTS\\WinPass Creator_08-04-2019_1\\WinPass Creator\\4w.txt"
+            "TargetName" = "8:4w.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_DE463AB53276402FAEB831CFF7E42E88"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D06BEE2FE04E4AA9AE226488C01CED1B"
+            {
+            "SourcePath" = "8:E:\\VS PROJECTS\\WinPass Creator_08-04-2019_1\\WinPass Creator\\8w.txt"
+            "TargetName" = "8:8w.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_DE463AB53276402FAEB831CFF7E42E88"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EC41BC191ED14812BF252DC0AA899E5B"
+            {
+            "SourcePath" = "8:E:\\VS PROJECTS\\WinPass Creator_08-04-2019_1\\WinPass Creator\\9w.txt"
+            "TargetName" = "8:9w.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_DE463AB53276402FAEB831CFF7E42E88"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F126F563AD4C4FD4A04702E71A3BB3EF"
+            {
+            "SourcePath" = "8:E:\\VS PROJECTS\\WinPass Creator_08-04-2019_1\\WinPass Creator\\5w.txt"
+            "TargetName" = "8:5w.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_DE463AB53276402FAEB831CFF7E42E88"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -154,6 +456,18 @@
                 {
                 }
             }
+            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_DE463AB53276402FAEB831CFF7E42E88"
+            {
+            "DefaultLocation" = "8:C:\\Mighty Apps"
+            "Name" = "8:Mighty Apps"
+            "AlwaysCreate" = "11:TRUE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:NEWPROPERTY1"
+                "Folders"
+                {
+                }
+            }
         }
         "LaunchCondition"
         {
@@ -171,7 +485,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Password Pro"
         "ProductCode" = "8:{86F3E6AF-BF70-408F-A158-F95337241D8F}"
-        "PackageCode" = "8:{E86E4C1E-29DC-4858-AFCC-B569E2B668FC}"
+        "PackageCode" = "8:{9A7C40E2-A938-41CA-9DA0-06BE2B49CF00}"
         "UpgradeCode" = "8:{5796FD76-6184-43C0-A55A-4781A94D69B3}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -179,12 +493,12 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Scott Reed"
+        "Manufacturer" = "8:Mighty Apps"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:Setup Password Pro"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Scott Reed"
+        "ARPCONTACT" = "8:Mighty Apps"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:Create an easy to remember password but hard to crack"
         "ARPURLINFOABOUT" = "8:"
