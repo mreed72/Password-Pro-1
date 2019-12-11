@@ -2,5 +2,6 @@
  Create easy to remember passwords that are difficult to crack.
  
  
- DOWNLOAD
- https://github.com/mreed72/Password-Pro-1/releases/tag/1.3
+ DOWNLOAD<br>
+ 
+https://github.com/mreed72/Password-Pro-1/releases/download/1.3/Setup.msi
