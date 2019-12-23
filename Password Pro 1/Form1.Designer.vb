@@ -59,11 +59,11 @@ Partial Class Form1
           Me.cbLower = New System.Windows.Forms.CheckBox()
           Me.cbSymbol = New System.Windows.Forms.CheckBox()
           Me.cbNumber = New System.Windows.Forms.CheckBox()
-          Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
           Me.PictureBox3 = New System.Windows.Forms.PictureBox()
           Me.Button3 = New System.Windows.Forms.Button()
           Me.Button2 = New System.Windows.Forms.Button()
           Me.Button1 = New System.Windows.Forms.Button()
+          Me.Button4 = New System.Windows.Forms.Button()
           Me.Panel1.SuspendLayout()
           CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
           CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -364,7 +364,6 @@ Partial Class Form1
           '
           Me.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
           Me.dgv.BackgroundColor = System.Drawing.SystemColors.Control
-          Me.dgv.BorderStyle = System.Windows.Forms.BorderStyle.None
           Me.dgv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken
           Me.dgv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
           Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -492,16 +491,6 @@ Partial Class Form1
           Me.cbNumber.Text = "Numbers"
           Me.cbNumber.UseVisualStyleBackColor = True
           '
-          'LinkLabel1
-          '
-          Me.LinkLabel1.AutoSize = True
-          Me.LinkLabel1.Location = New System.Drawing.Point(420, 166)
-          Me.LinkLabel1.Name = "LinkLabel1"
-          Me.LinkLabel1.Size = New System.Drawing.Size(76, 13)
-          Me.LinkLabel1.TabIndex = 12
-          Me.LinkLabel1.TabStop = True
-          Me.LinkLabel1.Text = "View Favorites"
-          '
           'PictureBox3
           '
           Me.PictureBox3.Image = Global.Password_Pro_1.My.Resources.Resources._1493228
@@ -517,9 +506,9 @@ Partial Class Form1
           Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
           Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
           Me.Button3.Image = Global.Password_Pro_1.My.Resources.Resources.weIMAGE058
-          Me.Button3.Location = New System.Drawing.Point(450, 298)
+          Me.Button3.Location = New System.Drawing.Point(419, 296)
           Me.Button3.Name = "Button3"
-          Me.Button3.Size = New System.Drawing.Size(46, 49)
+          Me.Button3.Size = New System.Drawing.Size(70, 49)
           Me.Button3.TabIndex = 9
           Me.Button3.UseVisualStyleBackColor = False
           '
@@ -528,30 +517,41 @@ Partial Class Form1
           Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
           Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
           Me.Button2.Image = Global.Password_Pro_1.My.Resources.Resources.weIMAGE072
-          Me.Button2.Location = New System.Drawing.Point(450, 248)
+          Me.Button2.Location = New System.Drawing.Point(419, 246)
           Me.Button2.Name = "Button2"
-          Me.Button2.Size = New System.Drawing.Size(46, 44)
+          Me.Button2.Size = New System.Drawing.Size(70, 44)
           Me.Button2.TabIndex = 8
           Me.Button2.UseVisualStyleBackColor = False
           '
           'Button1
           '
-          Me.Button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+          Me.Button1.BackColor = System.Drawing.SystemColors.ActiveBorder
           Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
           Me.Button1.Image = Global.Password_Pro_1.My.Resources.Resources.weIMAGE067
-          Me.Button1.Location = New System.Drawing.Point(450, 187)
+          Me.Button1.Location = New System.Drawing.Point(419, 185)
           Me.Button1.Name = "Button1"
-          Me.Button1.Size = New System.Drawing.Size(48, 55)
+          Me.Button1.Size = New System.Drawing.Size(72, 55)
           Me.Button1.TabIndex = 7
           Me.Button1.UseVisualStyleBackColor = False
+          '
+          'Button4
+          '
+          Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+          Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+          Me.Button4.Location = New System.Drawing.Point(419, 156)
+          Me.Button4.Name = "Button4"
+          Me.Button4.Size = New System.Drawing.Size(72, 23)
+          Me.Button4.TabIndex = 14
+          Me.Button4.Text = "FAVs"
+          Me.Button4.UseVisualStyleBackColor = False
           '
           'Form1
           '
           Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
           Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
           Me.ClientSize = New System.Drawing.Size(501, 391)
+          Me.Controls.Add(Me.Button4)
           Me.Controls.Add(Me.PictureBox3)
-          Me.Controls.Add(Me.LinkLabel1)
           Me.Controls.Add(Me.TableLayoutPanel4)
           Me.Controls.Add(Me.Button3)
           Me.Controls.Add(Me.Button2)
@@ -624,6 +624,6 @@ Partial Class Form1
     Friend WithEvents cbLower As CheckBox
     Friend WithEvents cbSymbol As CheckBox
     Friend WithEvents cbNumber As CheckBox
-     Friend WithEvents LinkLabel1 As LinkLabel
      Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+     Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

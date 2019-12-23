@@ -7,7 +7,15 @@
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
-        'CLEAR
+
+          If MessageBox.Show("Would you like to clear the FAVORITES file?  this will delete all your saved favorites!!!", "Delete Favorites", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+               Dim myfile As String = "C:\Mighty Apps\fav.txt"
+               My.Computer.FileSystem.DeleteFile(myfile)
+               My.Computer.FileSystem.WriteAllText(myfile, "", True)
+          End If
+
+
+
         Try
             labWordCount.Text = "Character Count: "
             txResults.Clear()
@@ -157,14 +165,12 @@
 
     End Sub
 
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-          Diagnostics.Process.Start("C:\Mighty Apps\fav.txt")
-
-    End Sub
-
      Private Sub PictureBox3_Click(sender As System.Object, e As System.EventArgs) Handles PictureBox3.Click
           frmAbout.Show()
 
      End Sub
 
+     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
+          Diagnostics.Process.Start("C:\Mighty Apps\fav.txt")
+     End Sub
 End Class
