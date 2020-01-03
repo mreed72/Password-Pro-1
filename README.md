@@ -8,11 +8,11 @@
  
  All of these features and you will still get a password that is very difficult to crack but yet easy to remember.
  
- Here are some examples that were generated from the program:
- QTATarTag569@
- QTACodersBubbly819%
- XZXZOutcryWafted69%
- XCompaniesTreadmill28%
+ Here are some examples that were generated from the program:<br>
+ QTATarTag569@<br>
+ QTACodersBubbly819%<br>
+ XZXZOutcryWafted69%<br>
+ XCompaniesTreadmill28%<br>
  
  
  
