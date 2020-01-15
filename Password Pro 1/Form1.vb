@@ -95,7 +95,7 @@
         ElseIf rb9.Checked = True Then
                WdList = "C:\Mighty Apps\9w.txt"
         ElseIf rb10.Checked = True Then
-               WdList = "C:\Mighty Apps\10w.txt"""
+               WdList = "C:\Mighty Apps\10w.txt"
         ElseIf rb11.Checked = True Then
                WdList = "C:\Mighty Apps\10PW.txt"
         Else
@@ -171,6 +171,10 @@
      End Sub
 
      Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
-          Diagnostics.Process.Start("C:\Mighty Apps\fav.txt")
+          Try
+               Diagnostics.Process.Start("C:\Mighty Apps\fav.txt")
+          Catch ex As Exception
+
+          End Try
      End Sub
 End Class
