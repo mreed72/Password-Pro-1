@@ -14,8 +14,6 @@
                My.Computer.FileSystem.WriteAllText(myfile, "", True)
           End If
 
-
-
         Try
             labWordCount.Text = "Character Count: "
             txResults.Clear()
@@ -67,15 +65,11 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
           Me.Text = "Password Pro"
 
-
           Dim c As Boolean
           c = My.Computer.FileSystem.DirectoryExists("C:\Mighty Apps\")
           If c = False Then
                MessageBox.Show("Data File Error, folder not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
           End If
-
-
-
 
     End Sub
 
@@ -108,18 +102,18 @@
         Dim sr As System.IO.StreamReader
         Dim ri As Integer = 0
         Dim wa As New ArrayList
-        If System.IO.File.Exists(xLOC) = True Then 'x4 is location of text file
-            sr = New IO.StreamReader(xLOC)
-            Do While sr.Peek > -1
-                wa.Add(sr.ReadLine)
-            Loop
-            ri = CInt((wa.Count - 1) * Rnd())
-            Return wa(ri) 'The random word, use as needed.
-            sr.Close()
-        Else
-            sr.Close()
-            MsgBox("Error attempting to open Word list")
-        End If
+          If System.IO.File.Exists(xLOC) = True Then
+               sr = New IO.StreamReader(xLOC)
+               Do While sr.Peek > -1
+                    wa.Add(sr.ReadLine)
+               Loop
+               ri = CInt((wa.Count - 1) * Rnd())
+               Return wa(ri)
+               sr.Close()
+          Else
+               sr.Close()
+               MsgBox("Error attempting to open Word list")
+          End If
     End Function
 
     Function GRn(ByRef length As Integer) As String
@@ -141,9 +135,6 @@
             GRz = GRz & Mid(ac, Int(Rnd() * Len(ac) + 1), 1)
         Next
     End Function
-
-
-
 
     Private Sub AddToFavoritesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddToFavoritesToolStripMenuItem.Click
         Try
