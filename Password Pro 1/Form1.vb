@@ -8,11 +8,11 @@
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
 
-          If MessageBox.Show("Would you like to clear the FAVORITES file?  this will delete all your saved favorites!!!", "Delete Favorites", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
-               Dim myfile As String = "C:\Mighty Apps\fav.txt"
-               My.Computer.FileSystem.DeleteFile(myfile)
-               My.Computer.FileSystem.WriteAllText(myfile, "", True)
-          End If
+        If MessageBox.Show("Would you like to clear the FAVORITES file?  this will delete all your saved favorites!!!" & vbNewLine & "Click NO to clear the form without deleting FAVs.", "Delete Favorites", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+            Dim myfile As String = "C:\Mighty Apps\fav.txt"
+            My.Computer.FileSystem.DeleteFile(myfile)
+            My.Computer.FileSystem.WriteAllText(myfile, "", True)
+        End If
 
         Try
             labWordCount.Text = "Character Count: "

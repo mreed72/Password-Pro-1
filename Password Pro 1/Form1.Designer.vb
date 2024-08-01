@@ -26,6 +26,8 @@ Partial Class Form1
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.rb3 = New System.Windows.Forms.RadioButton()
@@ -49,6 +51,7 @@ Partial Class Form1
         Me.dgv = New System.Windows.Forms.DataGridView()
         Me.GenPss = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.AddToFavoritesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.txResults = New System.Windows.Forms.TextBox()
         Me.labWordCount = New System.Windows.Forms.Label()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
@@ -61,9 +64,7 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.AddToFavoritesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -72,11 +73,13 @@ Partial Class Form1
         Me.ContextMenuStrip1.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.LightGreen
+        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -84,6 +87,25 @@ Partial Class Form1
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(570, 55)
         Me.Panel1.TabIndex = 0
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(17, 33)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(28, 13)
+        Me.Label5.TabIndex = 17
+        Me.Label5.Text = "v1.0"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(12, 9)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(129, 22)
+        Me.Label4.TabIndex = 16
+        Me.Label4.Text = "Password Pro"
         '
         'TableLayoutPanel1
         '
@@ -100,7 +122,7 @@ Partial Class Form1
         Me.TableLayoutPanel1.Controls.Add(Me.rb9, 0, 7)
         Me.TableLayoutPanel1.Controls.Add(Me.rb10, 0, 8)
         Me.TableLayoutPanel1.Controls.Add(Me.rb11, 0, 9)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(12, 90)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(23, 148)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 10
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
@@ -242,7 +264,7 @@ Partial Class Form1
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.TableLayoutPanel2.Controls.Add(Me.Label2, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.txPrefix, 1, 0)
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(77, 90)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(23, 79)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
@@ -281,7 +303,7 @@ Partial Class Form1
         Me.TableLayoutPanel3.Controls.Add(Me.rbA3, 2, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.rbA4, 3, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.rbA5, 4, 0)
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(283, 90)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(229, 79)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
@@ -347,7 +369,7 @@ Partial Class Form1
         Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.GenPss})
         Me.dgv.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.dgv.Location = New System.Drawing.Point(85, 181)
+        Me.dgv.Location = New System.Drawing.Point(91, 148)
         Me.dgv.Name = "dgv"
         Me.dgv.ReadOnly = True
         Me.dgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
@@ -371,21 +393,29 @@ Partial Class Form1
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(161, 26)
         '
+        'AddToFavoritesToolStripMenuItem
+        '
+        Me.AddToFavoritesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.AddToFavoritesToolStripMenuItem.Image = Global.Password_Pro_1.My.Resources.Resources.weIMAGE127
+        Me.AddToFavoritesToolStripMenuItem.Name = "AddToFavoritesToolStripMenuItem"
+        Me.AddToFavoritesToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
+        Me.AddToFavoritesToolStripMenuItem.Text = "Add to Favorites"
+        '
         'txResults
         '
         Me.txResults.BackColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.txResults.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txResults.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txResults.Location = New System.Drawing.Point(116, 148)
+        Me.txResults.Location = New System.Drawing.Point(91, 113)
         Me.txResults.Name = "txResults"
-        Me.txResults.Size = New System.Drawing.Size(320, 27)
+        Me.txResults.Size = New System.Drawing.Size(395, 27)
         Me.txResults.TabIndex = 5
         '
         'labWordCount
         '
         Me.labWordCount.AutoSize = True
         Me.labWordCount.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.labWordCount.Location = New System.Drawing.Point(117, 129)
+        Me.labWordCount.Location = New System.Drawing.Point(231, 63)
         Me.labWordCount.Name = "labWordCount"
         Me.labWordCount.Size = New System.Drawing.Size(89, 14)
         Me.labWordCount.TabIndex = 6
@@ -402,7 +432,7 @@ Partial Class Form1
         Me.TableLayoutPanel4.Controls.Add(Me.cbLower, 1, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.cbSymbol, 2, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.cbNumber, 3, 0)
-        Me.TableLayoutPanel4.Location = New System.Drawing.Point(12, 441)
+        Me.TableLayoutPanel4.Location = New System.Drawing.Point(23, 410)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 1
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
@@ -465,9 +495,9 @@ Partial Class Form1
         '
         Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4.Location = New System.Drawing.Point(12, 469)
+        Me.Button4.Location = New System.Drawing.Point(486, 71)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(72, 23)
+        Me.Button4.Size = New System.Drawing.Size(72, 36)
         Me.Button4.TabIndex = 14
         Me.Button4.Text = "FAVs"
         Me.Button4.UseVisualStyleBackColor = False
@@ -475,7 +505,7 @@ Partial Class Form1
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.Password_Pro_1.My.Resources.Resources._1493228
-        Me.PictureBox3.Location = New System.Drawing.Point(486, 97)
+        Me.PictureBox3.Location = New System.Drawing.Point(432, 84)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(16, 16)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -487,10 +517,13 @@ Partial Class Form1
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button3.Image = Global.Password_Pro_1.My.Resources.Resources.weIMAGE058
-        Me.Button3.Location = New System.Drawing.Point(486, 326)
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button3.Location = New System.Drawing.Point(492, 313)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(70, 49)
+        Me.Button3.Size = New System.Drawing.Size(72, 58)
         Me.Button3.TabIndex = 9
+        Me.Button3.Text = "EXIT"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
@@ -498,10 +531,13 @@ Partial Class Form1
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Image = Global.Password_Pro_1.My.Resources.Resources.weIMAGE072
-        Me.Button2.Location = New System.Drawing.Point(486, 271)
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button2.Location = New System.Drawing.Point(492, 247)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(70, 49)
+        Me.Button2.Size = New System.Drawing.Size(72, 58)
         Me.Button2.TabIndex = 8
+        Me.Button2.Text = "CLEAR"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Button1
@@ -509,44 +545,27 @@ Partial Class Form1
         Me.Button1.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Image = Global.Password_Pro_1.My.Resources.Resources.weIMAGE067
-        Me.Button1.Location = New System.Drawing.Point(486, 216)
+        Me.Button1.Location = New System.Drawing.Point(492, 181)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(70, 49)
+        Me.Button1.Size = New System.Drawing.Size(72, 58)
         Me.Button1.TabIndex = 7
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'AddToFavoritesToolStripMenuItem
+        'PictureBox1
         '
-        Me.AddToFavoritesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.AddToFavoritesToolStripMenuItem.Image = Global.Password_Pro_1.My.Resources.Resources.weIMAGE127
-        Me.AddToFavoritesToolStripMenuItem.Name = "AddToFavoritesToolStripMenuItem"
-        Me.AddToFavoritesToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-        Me.AddToFavoritesToolStripMenuItem.Text = "Add to Favorites"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(406, 9)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(159, 22)
-        Me.Label4.TabIndex = 16
-        Me.Label4.Text = "Password Helper"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(530, 31)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(28, 13)
-        Me.Label5.TabIndex = 17
-        Me.Label5.Text = "v1.0"
+        Me.PictureBox1.Image = Global.Password_Pro_1.My.Resources.Resources.LogoIcon
+        Me.PictureBox1.Location = New System.Drawing.Point(504, 6)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(54, 46)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 15
+        Me.PictureBox1.TabStop = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(570, 506)
+        Me.ClientSize = New System.Drawing.Size(570, 438)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.TableLayoutPanel4)
@@ -578,6 +597,7 @@ Partial Class Form1
         Me.TableLayoutPanel4.ResumeLayout(False)
         Me.TableLayoutPanel4.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -621,4 +641,5 @@ Partial Class Form1
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
