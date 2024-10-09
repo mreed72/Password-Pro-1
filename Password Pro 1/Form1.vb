@@ -65,11 +65,19 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
           Me.Text = "Password Pro"
 
-          Dim c As Boolean
-          c = My.Computer.FileSystem.DirectoryExists("C:\Mighty Apps\")
-          If c = False Then
-               MessageBox.Show("Data File Error, folder not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-          End If
+        Dim folderPath As String = "C:\Mighty Apps\"
+        Dim c As Boolean
+
+        c = My.Computer.FileSystem.DirectoryExists(folderPath)
+        If Not c Then
+            Try
+                My.Computer.FileSystem.CreateDirectory(folderPath)
+            Catch ex As Exception
+
+            End Try
+        Else
+
+        End If
 
     End Sub
 
@@ -168,4 +176,6 @@
 
           End Try
      End Sub
+
+
 End Class
