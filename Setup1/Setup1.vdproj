@@ -15,19 +15,13 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_083C6E2316C440068D8232DA3F3F0AD5"
+        "MsmKey" = "8:_0476BF3684224A27B0DE44B6D9C7F88D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_2B8C9AB43DBE4632B9EFBEE5947DF237"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_5562A1F28ECC407099185DB6DCBDB3AA"
+        "MsmKey" = "8:_253D819FFFDE4645B560EDA892C82C77"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -39,13 +33,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_730A900679D74E488F6DB4F6A53F017E"
+        "MsmKey" = "8:_5E05AA1AAE9C495892999B0230251664"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_751D1469CFA4411C9FAD4235FDE98860"
+        "MsmKey" = "8:_653E14200E404FEA9CFB1795321E3EC1"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -57,19 +51,25 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_79F1BF0AE4C1443BA5E936FA79B49DD1"
+        "MsmKey" = "8:_7DF26680F4174BE38CFDDB998C402CA2"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_8A34030C2DD24114BD4C7DE44649F066"
+        "MsmKey" = "8:_A62F68919F99404E91577DAB3644BB17"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_921A79BDD861464798194EFB1742FB2F"
+        "MsmKey" = "8:_B3ACCC1C99AD4818B612E78B3C347614"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C2C1499F28CE470AA7CAB903713575DF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -81,26 +81,32 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C93676CD0D0C4E57906E6907950F479F"
+        "MsmKey" = "8:_CEA1C9E37ABC46E9A0A812859240487F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_D6DABCCE60F84CECB7E7074EDF37D880"
+        "MsmKey" = "8:_DF15CF199C8645AEB6A4FFE933062A2F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C9354CC852E55A2B2EAD200467AB7CB3"
+        "MsmKey" = "8:_FED5753192CC472786678B7EC355FE72"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_57343B44A5F74F0FBF6737A03E2D5EB5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C9354CC852E55A2B2EAD200467AB7CB3"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -121,6 +127,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -137,6 +151,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -166,32 +188,12 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_083C6E2316C440068D8232DA3F3F0AD5"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0476BF3684224A27B0DE44B6D9C7F88D"
             {
-            "SourcePath" = "8:C:\\Mighty Apps\\10w.txt"
-            "TargetName" = "8:10w.txt"
-            "Tag" = "8:"
-            "Folder" = "8:_C5115337F51B40519FE94E6C0F7B52EA"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2B8C9AB43DBE4632B9EFBEE5947DF237"
-            {
-            "SourcePath" = "8:C:\\Mighty Apps\\6w.txt"
+            "SourcePath" = "8:6w.txt"
             "TargetName" = "8:6w.txt"
             "Tag" = "8:"
-            "Folder" = "8:_C5115337F51B40519FE94E6C0F7B52EA"
+            "Folder" = "8:_B03207FCA8554D2792554409ECCD5985"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -206,12 +208,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5562A1F28ECC407099185DB6DCBDB3AA"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_253D819FFFDE4645B560EDA892C82C77"
             {
-            "SourcePath" = "8:C:\\Mighty Apps\\8w.txt"
-            "TargetName" = "8:8w.txt"
+            "SourcePath" = "8:fav.txt"
+            "TargetName" = "8:fav.txt"
             "Tag" = "8:"
-            "Folder" = "8:_C5115337F51B40519FE94E6C0F7B52EA"
+            "Folder" = "8:_B03207FCA8554D2792554409ECCD5985"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -226,12 +228,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_730A900679D74E488F6DB4F6A53F017E"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5E05AA1AAE9C495892999B0230251664"
             {
-            "SourcePath" = "8:C:\\Mighty Apps\\4w.txt"
-            "TargetName" = "8:4w.txt"
+            "SourcePath" = "8:9w.txt"
+            "TargetName" = "8:9w.txt"
             "Tag" = "8:"
-            "Folder" = "8:_C5115337F51B40519FE94E6C0F7B52EA"
+            "Folder" = "8:_B03207FCA8554D2792554409ECCD5985"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -246,12 +248,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_751D1469CFA4411C9FAD4235FDE98860"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_653E14200E404FEA9CFB1795321E3EC1"
             {
-            "SourcePath" = "8:C:\\Mighty Apps\\10PW.txt"
-            "TargetName" = "8:10PW.txt"
+            "SourcePath" = "8:10w.txt"
+            "TargetName" = "8:10w.txt"
             "Tag" = "8:"
-            "Folder" = "8:_C5115337F51B40519FE94E6C0F7B52EA"
+            "Folder" = "8:_B03207FCA8554D2792554409ECCD5985"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -286,12 +288,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_79F1BF0AE4C1443BA5E936FA79B49DD1"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7DF26680F4174BE38CFDDB998C402CA2"
             {
-            "SourcePath" = "8:C:\\Mighty Apps\\9w.txt"
-            "TargetName" = "8:9w.txt"
+            "SourcePath" = "8:WordList.txt"
+            "TargetName" = "8:WordList.txt"
             "Tag" = "8:"
-            "Folder" = "8:_C5115337F51B40519FE94E6C0F7B52EA"
+            "Folder" = "8:_B03207FCA8554D2792554409ECCD5985"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -306,12 +308,32 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8A34030C2DD24114BD4C7DE44649F066"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A62F68919F99404E91577DAB3644BB17"
             {
-            "SourcePath" = "8:C:\\Mighty Apps\\5w.txt"
+            "SourcePath" = "8:10PW.txt"
+            "TargetName" = "8:10PW.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_B03207FCA8554D2792554409ECCD5985"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B3ACCC1C99AD4818B612E78B3C347614"
+            {
+            "SourcePath" = "8:5w.txt"
             "TargetName" = "8:5w.txt"
             "Tag" = "8:"
-            "Folder" = "8:_C5115337F51B40519FE94E6C0F7B52EA"
+            "Folder" = "8:_B03207FCA8554D2792554409ECCD5985"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -326,12 +348,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_921A79BDD861464798194EFB1742FB2F"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C2C1499F28CE470AA7CAB903713575DF"
             {
-            "SourcePath" = "8:C:\\Mighty Apps\\7w.txt"
+            "SourcePath" = "8:7w.txt"
             "TargetName" = "8:7w.txt"
             "Tag" = "8:"
-            "Folder" = "8:_C5115337F51B40519FE94E6C0F7B52EA"
+            "Folder" = "8:_B03207FCA8554D2792554409ECCD5985"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -377,12 +399,12 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C93676CD0D0C4E57906E6907950F479F"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CEA1C9E37ABC46E9A0A812859240487F"
             {
-            "SourcePath" = "8:C:\\Mighty Apps\\3w.txt"
+            "SourcePath" = "8:3w.txt"
             "TargetName" = "8:3w.txt"
             "Tag" = "8:"
-            "Folder" = "8:_C5115337F51B40519FE94E6C0F7B52EA"
+            "Folder" = "8:_B03207FCA8554D2792554409ECCD5985"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -397,12 +419,32 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D6DABCCE60F84CECB7E7074EDF37D880"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DF15CF199C8645AEB6A4FFE933062A2F"
             {
-            "SourcePath" = "8:C:\\Mighty Apps\\fav.txt"
-            "TargetName" = "8:fav.txt"
+            "SourcePath" = "8:8w.txt"
+            "TargetName" = "8:8w.txt"
             "Tag" = "8:"
-            "Folder" = "8:_C5115337F51B40519FE94E6C0F7B52EA"
+            "Folder" = "8:_B03207FCA8554D2792554409ECCD5985"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FED5753192CC472786678B7EC355FE72"
+            {
+            "SourcePath" = "8:4w.txt"
+            "TargetName" = "8:4w.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_B03207FCA8554D2792554409ECCD5985"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -430,6 +472,18 @@
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Property" = "8:DesktopFolder"
+                "Folders"
+                {
+                }
+            }
+            "{994432C3-9487-495D-8656-3E829A8DBDDE}:_B03207FCA8554D2792554409ECCD5985"
+            {
+            "DefaultLocation" = "8:C:\\Mighty Apps"
+            "Name" = "8:⁬Mighty Apps"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:NEWPROPERTY1"
                 "Folders"
                 {
                 }
